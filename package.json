@@ -1,0 +1,38 @@
+{
+  "name": "npm-trusted-publish",
+  "version": "1.0.1",
+  "description": "Hello! NPM Trusted Publish - A simple package to demonstrate trusted NPM publishing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Build complete\"",
+    "prepare": "npm run build",
+    "semantic-release": "npx --no-install semantic-release"
+  },
+  "keywords": [
+    "npm",
+    "publish",
+    "trusted"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakuna-matata-in/npm-trusted-publish.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hakuna-matata-in/npm-trusted-publish/issues"
+  },
+  "homepage": "https://github.com/hakuna-matata-in/npm-trusted-publish#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.5",
+    "@semantic-release/npm": "^12.0.0",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "semantic-release": "^23.0.0"
+  }
+}
